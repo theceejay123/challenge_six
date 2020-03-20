@@ -2,7 +2,10 @@
   <div class="columns">
     <% if !@customers.empty? %>
       <% for customer in @customers %>
-        <p><%= customer.full_name %></p>
+        <div class="card">
+          <% image_tag customer.image %>
+
+        </div>
       <% end %>
     <% end %>
   </div>

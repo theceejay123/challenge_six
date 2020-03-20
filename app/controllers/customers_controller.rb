@@ -9,7 +9,11 @@ class CustomersController < ApplicationController
 
   def edit; end
 
-  def alphabetized; end
+  def alphabetized
+    @customers = Customer.all.order(full_name: :desc)
+  end
 
-  def missing_email; end
+  def missing_email
+    @customers = Customer.where(email_address: [nil, ''])
+  end
 end
