@@ -1,0 +1,9 @@
+<div class="content">
+  <div class="columns">
+    <% if !@customers.empty? %>
+      <% for customer in @customers %>
+        <p><%= customer.full_name %></p>
+      <% end %>
+    <% end %>
+  </div>
+</div>
