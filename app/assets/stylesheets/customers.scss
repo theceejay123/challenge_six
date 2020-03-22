@@ -1,3 +1,40 @@
 // Place all the styles related to the customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    margin: 0rem;
+    padding: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+    padding-right: 4px;
+}
+
+.content {
+    margin: auto;
+}
+
+.columns {
+    display: flex;
+}
+
+.card {
+    margin-right: 10px;
+    padding: 20px;
+    border: 2px solid lighten($color: #000000, $amount: 70);
+    border-radius: 5px;
+    width: 300px !important;
+}
+
+.card > p {
+    padding-top: 3rem;
+    font-weight: 100;
+}
+
+.image {
+    height: 300px;
+    width: 300px;
+}

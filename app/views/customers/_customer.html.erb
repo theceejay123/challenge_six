@@ -3,8 +3,13 @@
     <% if !@customers.empty? %>
       <% for customer in @customers %>
         <div class="card">
-          <% image_tag customer.image %>
-
+          <h2><%= customer.full_name %></h2>
+          <% if customer.image.present? %>
+            <%= image_tag customer.image, class: "image" %>
+          <% end %>
+          <p><span class="bold">Province:</span><%= customer.notes %></p>
+          <p><%= customer.phone_number %></p>
+          <p><%= customer.email_address %></p>
         </div>
       <% end %>
     <% end %>
